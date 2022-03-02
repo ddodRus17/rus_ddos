@@ -20,6 +20,12 @@ random_pages('https://portal.gov.by/i/portalgovby/images/home/service1_', '.png'
 let bel_arr = [] 
 random_pages('https://president.gov.by/ru/search_results?start=0&end=1646043415&query=', '', bel_arr) 
  
+let spam_arr = [] 
+ 
+for (let i = 0; i < 1000; i++) { 
+    spam_arr.push(`https://rkn.gov.ru/communication/p${i}`) 
+    spam_arr.push(`https://rkn.gov.ru/about/structure/p${i}/`) 
+} 
  
 let sites = [[ 
     'https://s0.rbk.ru/v6_top_pics/resized/590xH/media/img/0/95/756459023488950.jpg', 
@@ -186,7 +192,30 @@ let sites = [[
 interfax_arr, 
 tvzvezda_arr, 
 portal_arr, 
-bel_arr 
+bel_arr ,
+[ 
+    'rkn.gov.ru', 
+    'https://rkn.gov.ru/images/news/image74132.jpg?timestamp=1646237110920', 
+    'https://rkn.gov.ru/mass-communications', 
+    'https://rkn.gov.ru/mass-communications', 
+    'https://rkn.gov.ru/communication', 
+    'https://rkn.gov.ru/personal-data', 
+    'https://rkn.gov.ru/it', 
+    'https://rkn.gov.ru/forms', 
+    'https://rkn.gov.ru/communication/licensing-activity/', 
+    'https://rkn.gov.ru/communication/license/', 
+    'https://rkn.gov.ru/communication/control/', 
+    'https://rkn.gov.ru/communication/register/', 
+    'https://rkn.gov.ru/press/publications/news72850.htm', 
+    'https://rkn.gov.ru/press/publications/news72758.htm', 
+    'https://rkn.gov.ru/press/publications/news72698.htm', 
+    'https://rkn.gov.ru/about/territorial/', 
+    'https://rkn.gov.ru/about/p403/', 
+    'https://rkn.gov.ru/about/p538/', 
+    'https://rkn.gov.ru/about/p563/', 
+ 
+ 
+], spam_arr
 ] 
  
 let p = document.querySelector('.index') 
