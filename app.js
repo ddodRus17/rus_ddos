@@ -1,7 +1,6 @@
 function random_pages(first_text, second_text, arr){ 
     for (let i = 0; i < 100; i++) { 
         arr.push(`${first_text}${Math.floor(Math.random() * 100000)}${second_text}`) 
-        console.log(arr[i]) 
     } 
 } 
  
@@ -186,8 +185,7 @@ let sites = [[
     'https://www.mos.ru/uslugi', 
     'http://government.ru/', 
     'https://mil.ru/', 
-    'https://www.nalog.gov.ru', 
-    'https://nangs.org/' 
+    'https://www.nalog.gov.ru'
 ], 
 interfax_arr, 
 tvzvezda_arr, 
